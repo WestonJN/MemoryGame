@@ -1,0 +1,20 @@
+#memBoard{
+    background: rgb(235, 234, 234);
+    border: rgb(184, 184, 184) 2px solid;
+    width: 400px;
+    height: 320px;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+#memBoard > div {
+    background: none;
+    border: #000 1px solid;
+    width: 132px;
+    height: 132px;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+}
