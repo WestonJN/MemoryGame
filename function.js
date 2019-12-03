@@ -1,4 +1,4 @@
-var memArray= ["A","A","B","B","C","C"];
+var memArray= ["A","A","B","B","C","C","D","D","E","E","F","F"];
 var memValues=[];
 var memTileId=[];
 var tilesFlipped =0;

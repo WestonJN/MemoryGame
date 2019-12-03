@@ -1,8 +1,8 @@
 #memBoard{
     background: rgb(235, 234, 234);
     border: rgb(184, 184, 184) 2px solid;
-    width: 400px;
-    height: 320px;
+    width: 500px;
+    height: 360px;
     padding: 20px;
     margin: 0px auto;
 }
