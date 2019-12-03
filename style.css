@@ -10,8 +10,8 @@
 #memBoard > div {
     background: none;
     border: #000 1px solid;
-    width: 132px;
-    height: 132px;
+    width: 60px;
+    height: 60px;
     float: left;
     margin: 10px;
     padding: 20px;
