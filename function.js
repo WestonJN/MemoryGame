@@ -55,6 +55,16 @@ function memoryFlipTile(tile,val){
                     memTileId = [];
                 }
                 setTimeout(flip2Back, 700);
+                function flip2Back(){
+                    var tile_1 = document.getElementById(memTileId[0]);
+                    var tile_2 = document.getElementById(memTileId[1]);
+                    tile_1.style.background = 'url(car1.png) no-repeat';
+                    tile_1.innerHTML = "";
+                    tile_2.style.background = 'url(car1.png) no-repeat';
+                    tile_2.innerHTML = "";
+                    memValues = [];
+                    memTileId = [];
+                }
             }
         } 
     }

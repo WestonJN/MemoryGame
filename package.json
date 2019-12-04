@@ -1,0 +1,19 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "function.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WestonJN/MemoryGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WestonJN/MemoryGame/issues"
+  },
+  "homepage": "https://github.com/WestonJN/MemoryGame#readme"
+}
