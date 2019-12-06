@@ -5,11 +5,15 @@
 }
 
 body {
-  display: flex;
   background-image:url("tesla.jpg");
 }
 img {
   width: 100%;
+}
+.heading h2{
+  text-align: center;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .memGame {
@@ -17,7 +21,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
   width: 40rem;
-  margin: 0 auto;
+  margin: 60px auto;
+  
 }
 
 .memBlock {
