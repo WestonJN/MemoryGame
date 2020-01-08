@@ -5,7 +5,7 @@ const {JSDOM} = jsdom;
 document.addEventListener('click', function (event) {
 
 	if (event.target.matches('.modal-open')) {
-		// Run your code to open a modal
+		//Run your code to open a modal
 	}
 
 	if (event.target.matches('.close')) {
