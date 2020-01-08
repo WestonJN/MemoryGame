@@ -9,7 +9,7 @@ document.addEventListener('click', function (event) {
 	}
 
 	if (event.target.matches('.close')) {
-		// Run your code to close a modal
+		//Run your code to close a modal
 	}
 
 }, false);
