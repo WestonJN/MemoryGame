@@ -67,7 +67,7 @@ const html = `<!DOCTYPE html>
     </div>
   </section>
 
-  <script src="function.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 `

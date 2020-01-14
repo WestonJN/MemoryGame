@@ -29,7 +29,7 @@ describe('memory game tests',function () {
         	resources: "usable"
       	});
 		document = dom.window.document;
-		game = require("../src/function");
+		game = require("../src/script");
 		
 	})
 
@@ -44,8 +44,4 @@ describe('memory game tests',function () {
 		clickSimulator(5) //flip another card at index 5
 		expect(document.getElementsByClassName('flip').length).toEqual(1)
 	})
-
-	
-
-
 })
