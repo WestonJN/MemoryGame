@@ -64,3 +64,9 @@ function resetBoard() {
 //it will be invoked immediately after its definition
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+module.exports = {flipCard,
+  checkForMatch,
+  disableCards,
+  unflipCards,
+  resetBoard
+};

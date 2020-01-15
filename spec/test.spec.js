@@ -1,15 +1,12 @@
 describe('memory game tests',function () {
+	
 	const html = require('./indexof.js')
 	const jsdom = require('jsdom')
 	const {JSDOM} = jsdom;
 
-	// using jsDom's VirtualConsole method
-	const virtualConsole = new jsdom.VirtualConsole();
 	
-	// and telling it to use the default nodejs console. 
-	virtualConsole.sendTo(console);
 	
-	// this function simulates a click on one of the game tiles.
+
 	const clickSimulator = (arg)=>{
 		let event = new dom.window.MouseEvent('click', {
 			view: dom.window,
@@ -29,12 +26,12 @@ describe('memory game tests',function () {
         	resources: "usable"
       	});
 		document = dom.window.document;
-		game = require("../src/script");
+		game = require("../src/script.js");
 		
 	})
 
 	afterEach(()=>{
-		delete require.cache[require.resolve('../src/function')]
+		delete require.cache[require.resolve('../src/script.js')]
 	})
 
 	it("should be able to add addEventListener to all game tiles and make them clickable", ()=>{
