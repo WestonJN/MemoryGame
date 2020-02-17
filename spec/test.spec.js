@@ -21,7 +21,7 @@ describe('Memory game', function () {
 	}
 
 	it('Should return true', function () {
-		const card = document.getElementsByClassName('memBlock');
+		const card = document.getElementsByClassName('.memBlock');
 		expect(card.innerHTML).toBe('true');
 	});
 	
