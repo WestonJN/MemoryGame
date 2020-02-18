@@ -1,12 +1,13 @@
 describe('Memory game', function () {
 
 	const jsdom = require('jsdom'),
-		  html  = require('../spec/indexof'),
-		  script  = require('../src/script');
+		  html  = require('../spec/indexof');
+		
           
 	beforeEach(() => {
 	   dom      = new jsdom.JSDOM(html);
 	   document = dom.window.document;
+	   script  = require('../src/script');
 	});
 
 	// onClick btn simulator
@@ -26,3 +27,6 @@ describe('Memory game', function () {
 	});
 	
 });
+
+// if card i added to flip then return true(meaning it has flipped)
+if length of memblock is 2

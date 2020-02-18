@@ -8,6 +8,8 @@ function flipCard() {
   if (lockBoard) return; 
   if (this === firstCard) return; 
 
+  console.log(this.classList)
+
   this.classList.add('flip');
 
   if (!flippedCard) {
