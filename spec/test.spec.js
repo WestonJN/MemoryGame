@@ -1,15 +1,32 @@
+describe('Memory game', function () {
 
-const jsdom = require('jsdom')       
-const {JSDOM} = jsdom;
+	const jsdom = require('jsdom'),
+		  html  = require('../spec/indexof');
+		
+          
+	beforeEach(() => {
+	   dom      = new jsdom.JSDOM(html);
+	   document = dom.window.document;
+	   script  = require('../src/script');
+	});
 
-document.addEventListener('click', function (event) {
-
-	if (event.target.matches('.modal-open')) {
-		// Run your code to open a modal
+	// onClick btn simulator
+	const onClick = card => {
+	   card.addEventListener('flipCard', e => {
+		  script.flipCard();
+	   });
+ 
+	   const e = new dom.window.Event("flipCard");
+ 
+	   card.dispatchEvent(e);
 	}
 
-	if (event.target.matches('.close')) {
-		//Run your code to close a modal
-	}
+	it('Should return true', function () {
+		const card = document.getElementsByClassName('.memBlock');
+		expect(card.innerHTML).toBe('true');
+	});
+	
+});
 
-}, false);
+// if card i added to flip then return true(meaning it has flipped)
+if length of memblock is 2
